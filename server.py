@@ -16,10 +16,12 @@ def hello_world():
 
 @app.route('/home', methods=['GET'])
 def get_home():
+	print("A request is made to the /home route.")
     return render_template('home.html');
 
 @app.route('/about', methods=['GET'])
 def get_about():
+	print("A request is made to the /about route.")
     return render_template('about.html');
 
 # main driver function
